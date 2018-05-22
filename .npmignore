@@ -1,0 +1,6 @@
+src
+coverage
+test
+node_modules
+modules
+.travis.yml

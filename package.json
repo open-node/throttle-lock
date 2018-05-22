@@ -1,0 +1,25 @@
+{
+  "name": "throttle-lock",
+  "version": "0.0.1",
+  "description": "Concurrency control support async",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --reporter=lcov --reporter=text-summary npm run _test",
+    "_test": "mocha test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/open-node/throttle-lock.git"
+  },
+  "keywords": ["throttle", "lock", "concurrency"],
+  "author": "Redstone Zhao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/open-node/throttle-lock/issues"
+  },
+  "homepage": "https://github.com/open-node/throttle-lock#readme",
+  "devDependencies": {
+    "mocha": "^5.1.1",
+    "nyc": "^11.7.3"
+  }
+}
