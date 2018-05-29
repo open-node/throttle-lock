@@ -43,7 +43,7 @@ const completed = key => {
  *
  * @return Function
  */
-const throttleLock = (key, fn, self, limit, timeout = 300) => async (
+export const throttleLock = (key, fn, self, limit, timeout = 300) => async (
   ...args
 ) => {
   await requestLock(key, limit, timeout);
@@ -51,5 +51,3 @@ const throttleLock = (key, fn, self, limit, timeout = 300) => async (
   completed(key);
   return result;
 };
-
-module.exports = { throttleLock };
